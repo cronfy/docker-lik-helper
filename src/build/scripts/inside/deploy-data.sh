@@ -17,8 +17,4 @@ LOCAL_DOCKER_RELATIVE="$2"
 
 ./load-mysql-dump.sh $PROJECT_ROOT $LOCAL_DOCKER_RELATIVE &&
 
-# project root
-cd "$PROJECT_ROOT" &&
-
-./yii user/create admin@example.com admin admin1 root &&
-./yii user/password admin admin
+true
